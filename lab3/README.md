@@ -2,18 +2,17 @@
 
 ## Project Details
 
-- *Name:* Basireddy Durga Koushik Reddy
-- *Registration Number:* 252U1R5021
-- *Section:* S-10
-- *Course:* Backend Development Fundamentals
-- *Lab:* Lab 3 – REST API, Query Parameters, Validation and Debugging
-- *Institution:* Aurora Deemed to be University
-- *Faculty:* Shiva Sai Teja
+- **Name:** Basireddy Durga Koushik reddy
+- **Registration Number:** 252U1R5021
+- **Section:** S-10
+- **Course:** Backend Development Fundamentals
+- **Lab:** Lab 3 – REST API, Query Parameters, Validation and Debugging
+- **Institution:** Aurora Deemed to be University
+- **Faculty:** Shiva Sai Teja
 
 ## Deployment URL
 
-*Render URL:* https://koushikbdflab3.onrender.com/books
-
+**Render URL:**https://koushikbdflab3.onrender.com/books
 ## Project Description
 
 This project implements RESTful API operations using Node.js, Express.js, and SQLite. It provides endpoints to create, retrieve, update, and delete book records.
@@ -32,7 +31,7 @@ It also supports searching, sorting, pagination, price filtering, input validati
 
 ## Project Structure
 
-text
+```text
 lab3/
 │
 ├── app.js
@@ -53,106 +52,106 @@ lab3/
     ├── 08-post-validation.png
     ├── 09-put-update.png
     └── 10-delete.png
-
+```
 
 ## Installation and Setup
 
 ### 1. Clone the repository
 
-bash
+```bash
 git  https://github.com/basireddydurgakoushikreddy-coder/koushikBDFLAB3.git
-
+```
 
 ### 2. Open the project folder
 
-bash
+```bash
 cd lab3
-
+```
 
 ### 3. Install dependencies
 
-bash
+```bash
 npm install
-
+```
 
 ### 4. Start the development server
 
-bash
+```bash
 npm run dev
-
+```
 
 The server runs at:
 
-text
+```text
 http://localhost:3000
-
+```
 
 ## API Endpoints
 
 | HTTP Method | Endpoint | Description |
 |---|---|---|
-| GET | /books | Retrieve all books |
-| GET | /books/:bookId | Retrieve a specific book |
-| POST | /books | Add a new book |
-| PUT | /books/:bookId | Update a book |
-| DELETE | /books/:bookId | Delete a book |
+| GET | `/books` | Retrieve all books |
+| GET | `/books/:bookId` | Retrieve a specific book |
+| POST | `/books` | Add a new book |
+| PUT | `/books/:bookId` | Update a book |
+| DELETE | `/books/:bookId` | Delete a book |
 
 ## Query Parameters
 
 ### 1. Search Books
 
-text
+```text
 GET /books?search_q=clean
-
+```
 
 Searches for books using a partial title.
 
 ### 2. Sorting
 
-text
+```text
 GET /books?order_by=price&order=ASC
-
+```
 
 Sorts books by price in ascending order.
 
-Use DESC for descending order.
+Use `DESC` for descending order.
 
 ### 3. Pagination
 
-text
+```text
 GET /books?limit=5&offset=0
-
+```
 
 Returns five records starting from the first record.
 
 ### 4. Price Filtering
 
-text
+```text
 GET /books?min_price=100&max_price=500
-
+```
 
 Retrieves books within the specified price range.
 
 ### 5. Combined Query
 
-text
+```text
 GET /books?search_q=clean&order_by=price&order=DESC&limit=5&offset=0&min_price=100&max_price=1000
-
+```
 
 Combines searching, sorting, pagination, and price filtering.
 
 ## Request Body for POST and PUT
 
-Select *Body → raw → JSON* in Postman.
+Select **Body → raw → JSON** in Postman.
 
-json
+```json
 {
   "title": "Python Programming",
   "author": "John Smith",
   "price": 450,
   "pages": 320
 }
-
+```
 
 ## HTTP Status Codes
 
@@ -236,4 +235,4 @@ This lab helped me understand REST API development using Node.js, Express.js, an
 
 ---
 
-*End of Lab 3*
+**End of Lab 3**
